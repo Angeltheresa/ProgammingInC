@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <math.h>
-
 int main() {
     float a, b, c, discriminant, root1, root2, rPart, iPart;
-    
     printf("Enter the values for a b and c (ax^2 + bx + c): ");
     scanf("%f %f %f", &a, &b, &c);
-    
     discriminant = b * b - 4 * a * c;
-    
     if (discriminant > 0) {
         root1 = (-b + sqrt(discriminant)) / (2 * a);
         root2 = (-b - sqrt(discriminant)) / (2 * a);
