@@ -58,7 +58,7 @@ int main()
     scanf("%d %d %d", &sub1, &sub2, &sub3);
 
     total = sub1 + sub2 + sub3;
-    average = total / 3.0; // calculate average as a floating-point value
+    average = total / 3.0; 
 
     if (average > 90) 
     {
@@ -91,3 +91,48 @@ int main()
     return 0;
 }
 
+
+/*student marklist using switch*/
+
+#include<stdio.h>
+int main()
+{
+    char name[50];
+    int regnum, sem, sub1, sub2, sub3, total;
+    float average, marks;
+
+    printf("Name: ");
+    scanf("%s", name);
+    printf("Register number: ");
+    scanf("%d", &regnum);
+    printf("Semester: ");
+    scanf("%d", &sem);
+    printf("Enter the marks: ");
+    scanf("%d %d %d", &sub1, &sub2, &sub3);
+
+    total = sub1 + sub2 + sub3;
+    average = total / 3.0; 
+      printf("Grade: ");
+    switch ((int)average / 10) {
+        case 10:
+        case 9:
+            printf("'O'\n");
+            break;
+        case 8:
+            printf("'A'\n");
+            break;
+        case 7:
+            printf("'B'\n");
+            break;
+        case 6:
+            printf("'C'\n");
+            break;
+        case 5:
+            printf("'P'\n");
+            break;
+        default:
+            printf("'F'\n");
+    }
+
+    return 0;
+}
